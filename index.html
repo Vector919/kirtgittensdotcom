@@ -1,179 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Kirt Gittens</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
 
-<html lang="en">
+		<!-- Header -->
+			<div id="header">
 
-<head>
+				<div class="top">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Kirt Gittens">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/kirt.png" alt="" /></span>
+							<h1 id="title">Kirt Gittens</h1>
+							<p>Software Engineer</p>
+						</div>
 
-    <title>Kirt Gittens</title>
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+								Prologue's nav expects links in one of two formats:
 
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+								1. Hash link (scrolls to a different section within the page)
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+								2. Standard link (sends the user to another page/site)
 
-  ga('create', 'UA-51163857-4', 'auto');
-  ga('send', 'pageview');
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
 
-</script>
+							-->
+							<ul>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+<!--
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+-->
+							</ul>
+						</nav>
 
-</head>
+				</div>
 
-<body id="page-top" data-spy="scroll" data-target=".intro-header">
+				<div class="bottom">
 
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://twitter.com/itsregz" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/Vector919" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/kirt-gittens-06a86499" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+						</ul>
 
+				</div>
 
-    <!-- Header -->
-    <div class="intro-header">
+			</div>
 
-        <div class="container">
+		<!-- Main -->
+			<div id="main">
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Kirt Gittens</h1>
-                        <h3>Software Engineer. Web Developer. Audio Technician.</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="http://github.com/Vector919" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="http://www.linkedin.com/pub/kirt-gittens/99/864/6a" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Kirt Gittens</h2>
+								<p>Software Engineer</p>
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">View Portfolio</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Here's a few of my projects, both professional and personal.</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item" id="item1">
+										<a href="javascript:void(0)" class="image fit"><img src="images/olvero.png" alt="" /></a>
+										<header>
+											<h3>Olvero USA</h3>
+                                            <a href="http://olverousa.com/" class="button">Visit Site</a>
+                                            <p id="details-1" style="display:none">
+                                            For Olvero USA, I developed a Python/Django web app, to help them manage sales and inventory of their olive oil distributors and customers.
+                                            The app makes use of Django admin for product configuration, and allows distributors to sign up, and then after approval, create their own stores to sell Olvero products.
+                                            </p>
+										</header>
+									</article>
+									<article class="item" id="item2">
+										<a href="#" class="image fit"><img src="images/learnpython.png" alt="" /></a>
+										<header>
+											<h3>Learn Python Programming from Scratch</h3>
+                                            <a href="https://www.udemy.com/learn-python-programming-from-scratch/" class="button">View Course</a>
+                                            <p id="details-2" style="display:none">
+                                            For EDUonix, I developed several Python training courses, including a "Learn Python From Scratch" course, covering everything in Python from the basics of the language and it's OOP model, to developing web applications with Django. The course is rated a 4.2 on Udemy, and has been taken by 26,000 students.
+                                            </p>
+										</header>
+									</article>
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item" id="item3">
+										<a href="#" class="image fit"><img src="images/school-upload.png" alt="" /></a>
+										<header>
+											<h3>ParentGlue - School Upload</h3>
+                                            <p id="details-3" style="display:none">
+                                            For the Parentglue CMS, I developed a web app using AngularJS to parse data from excel spreadsheets containing the school's data, and converted into JSON. It allowed school users to configure the data format and map the columns that would then be imported into the database via an API call, to speed up the onboarding process for new schools.
+                                            </p>
+										</header>
+									</article>
+									<article class="item" id="item4">
+										<a href="#" class="image fit"><img src="images/parent-app.png" alt="" /></a>
+										<header>
+											<h3>ParentGlue - Mobile App</h3>
+                                            <p id="details-4" style="display:none">
+                                            I singlehandedly developed the ParentGlue mobile companion app using the IonicFramework/AngularJS, and was able to build and deploy the app for android devices using Trigger.io
+                                            </p>
+										</header>
+									</article>
+								</div>
+								<div class="4u$ 12u$(mobile)">
+									<article class="item" id="item5">
+										<a href="#" class="image fit"><img src="images/racer.png" alt="" /></a>
+										<header>
+											<h3>Personal Project - Racer3D</h3>
+                                            <a href="https://www.youtube.com/watch?v=rEXFjzXXLFI" class="button">View Video</a>
+                                            <p id="details-5" style="display:none">
+                                                When I was 13, I was introduced to C++ programming as a way to write games. My first notable project was this split screen 3D racing game written with DirectXSDK and DarkGDK for C++. The original binaries aren't around, but I still have a video from it.
+                                            </p>
+                                            
+										</header>
+									</article>
+<!--
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<header>
+											<h3>Orci Convallis</h3>
+										</header>
+									</article>
+-->
+								</div>
+							</div>
+
+						</div>
                         <br>
-                        <a href="#about" class="btn btn-default btn-lg page-scroll"><span class="network-name">View Portfolio</span></a>
-                    </div>
-                </div>
-            </div>
+                        <div>
+                            <h2>Other Projects:</h2>
+                            <ul>
+                                <li>I have a <a href="http://dmg-control.com/blog/">blog</a>, where I write about things like <a href="http://dmg-control.com/blog/#django-forms-sat-me-down">The Django Forms API</a>, <a href="http://dmg-control.com/blog/#the-evil-parts">The terrors of Javascript</a>, and <a href="http://dmg-control.com/blog/#golang-rules">Google's Go</a></li>
+                                <li>I'm currently working on my own <a href="https://github.com/Vector919/CVM-ASM">assembler</a>, and a <a href="https://github.com/Vector919/CODE-VM-RUNTIME">VM</a>  to run the bytecode</li>
+                            </ul>
+                        </div>
+					</section>
 
-        </div>
-        <!-- /.container -->
+				<!-- About Me -->
+<!--
+					<section id="about" class="three">
+						<div class="container">
 
-    </div>
-    <!-- /.intro-header -->
+							<header>
+								<h2>About Me</h2>
+							</header>
 
-    <!-- Page Content -->
+							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-     <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class = "page-header">
-                    <h1>Software Portfolio</h1>
-                </div>
-                     <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="https://www.parentglue.com/">
-                    <img class="img-responsive" src="img/pglue.png" alt="">
-                </a>
-                <h3>
-                    <a href="#">Parentglue</a>
-                </h3>
-                <p>In 2014, I worked as a Software Developer at Parentglue, porting their iOS school administration app, over to android using Python and kivy. I also worked re-building the web interface with AngularJS and the Ruby API, in addition to developing a back-end library to handle e-document signing</p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="https://www.udemy.com/learn-python-programming-from-scratch/">
-                    <img class="img-responsive" src="img/eduonix.png"  alt="">
-                </a>
-                <h3>
-                    <a href="#">Eduonix Learning Solutions</a>
-                </h3>
-                <p>In early 2014, I worked as a training instructor at EDUonix developing a video course designed to teach viewers the introductory concepts of the Python programming language. Additionally, I taught web app development with Python frameworks such as: Django and CherryPy. The course has been taken by over 4300 students online and is freely available on <a href="https://www.udemy.com/learn-python-programming-from-scratch/"> Udemy (here)</a></p>
-            </div>
-            <div class="col-md-4 portfolio-item">
-                <a href="https://github.com/apandhi/ouapp">
-                    <img class="img-responsive" src="img/hack.png" alt="">
-                </a>
-                <h3>
-                    <a href="#">Hofstra Hackathon 2014</a>
-                </h3>
-                <p>As part of my project for the Hofstra Hack-a-Thon I worked with a team of students to develop an open source mobile application (for Android and iOS) that could be used to allow the university’s students to access their course information and grade data. I specifically worked on the front end using Twitter Bootstrap, and some elements of the data back end with steroids.js. Our team placed first in the competition. The source code is available on GitHub <a href="https://github.com/apandhi/ouapp">here</a></p>
-            </div>
-        </div>
-        <!-- /.row -->
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
+							ornare iaculis.</p>
 
-        <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 portfolio-item">
-                <a href="https://www.youtube.com/watch?v=rEXFjzXXLFI">
-                    <img class="img-responsive" src="img/racer.png" alt="">
-                </a>
-                <h3>
-                    <a href="https://www.youtube.com/watch?v=rEXFjzXXLFI">3D Racing</a>
-                </h3>
-                <p>In 2008, I had begun learning 3D game development with DarkGDK, and Blender, and as a result, developed a small 3D split-screen multiplayer racing game using these libraries and tools</p>
-            </div>
-       
-                </div>
+						</div>
+					</section>
+-->
 
-            </div>
-        </div>
-    </section>
-    <!-- /.content-section-a -->
+				<!-- Contact -->
+<!--
+					<section id="contact" class="four">
+						<div class="container">
 
-    <!-- /.content-section-a -->
+							<header>
+								<h2>Contact</h2>
+							</header>
 
-   
+							<p>Elementum sem parturient nulla quam placerat viverra
+							mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia
+							donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nunc
+							orci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.</p>
 
-    </div>
-    <!-- /.banner -->
+							<form method="post" action="#">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Kirt Gittens 2014. All Rights Reserved</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+						</div>
+					</section>
+-->
 
-    <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+			</div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-        <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+		<!-- Footer -->
+			<div id="footer">
 
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Damage Control Software. All rights reserved.</li>
+					</ul>
 
-</body>
+			</div>
 
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+            <script src="assets/js/dynamic.js"></script>
+
+	</body>
 </html>
