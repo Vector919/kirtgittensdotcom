@@ -33,3 +33,10 @@ $("#item5").hover(function() {
                  function(){
     $("#details-5").hide('slow');
 });
+
+$("#item6").hover(function() {
+    $("#details-6").show('slow');
+},
+                 function(){
+    $("#details-6").hide('slow');
+});
