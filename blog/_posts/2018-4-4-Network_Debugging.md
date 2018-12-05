@@ -1,15 +1,10 @@
----
-layout: post
-title: Debugging web applications with networking tools
----
-
 #### Debugging web applications with networking tools
 
-I feel like I'm constantly runnining into issues debugging web applications involving external services with outside code. When this happens, I find that having access to some networking tools to do some debugging can save a *lot* of time, compared to trying to figure out what's going on some other way.
+I feel like I'm constantly runnining into issues debugging web applications that communnicate over the network in a variety of ways. When services need to talk to standalone applications that I can't easily debug, I find that having access to some networking tools to do some debugging can save a *lot* of time, compared to trying to figure out what's going on some other way.
 
-Being able to see what's going on and potentially change it at a network level can give you a level of insight into your web application problems, beyond what you might get from traditional debugging tools.
+Being able to see what's going on and potentially change it at a network level can give you a degree of insight into your web application, beyond what you might get from traditional debugging tools.
 
-In case anyone else isn't aware of some of these tools and how they can help you, I'll walk through some example's of how I was able to use these to solve some issues.
+There's a bunch of great linux tools that are generally available out of the box to help you solve these problems. In case anyone else isn't aware of some of these tools and how they can help you, I'll walk through some example's of how I was able to use these to solve some issues.
 
 #### 1. [netcat (nc)](http://netcat.sourceforge.net/)
 When debugging issues with any network request, I find that the thing I need most often, is to spin up a simple server and view the raw contents of the it's requests. While there's lots of different ways you can do this, I think the most straightforward  way that's available on most platforms is netcat
@@ -63,4 +58,6 @@ There's probably an infinite amount of depth to the [options available in Wiresh
 ![alt text](<https://storage.googleapis.com/imperial-flow-2206/wireshark_example.png> "Logo Title Text 1")
 
 Once you've found the packets related to your particular issue Wireshark gives you a great interface that allows you to easily inspect the contents of every packet to see what could have gone wrong at any point.
+
+I know there's an infinite amount of depth to these tools beyond what I've talked about here, so it's definitely worth looking into the documentation for these tools to deal with more complicated use cases. The few tricks I've mentioned here however, might be able to save you lots of debugging time when looking into what's going on with your application!
 
