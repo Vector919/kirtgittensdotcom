@@ -2,7 +2,6 @@
 layout: post
 title: Debugging web applications with networking tools
 ---
-#### Debugging web applications with networking tools
 
 I feel like I'm constantly runnining into issues debugging web applications that communnicate over the network in a variety of ways. When services need to talk to standalone applications that I can't easily debug, I find that having access to some networking tools to do some debugging can save a *lot* of time, compared to trying to figure out what's going on some other way.
 
