@@ -1,3 +1,7 @@
+---
+layout: post
+title: Debugging web applications with networking tools
+---
 #### Debugging web applications with networking tools
 
 I feel like I'm constantly runnining into issues debugging web applications that communnicate over the network in a variety of ways. When services need to talk to standalone applications that I can't easily debug, I find that having access to some networking tools to do some debugging can save a *lot* of time, compared to trying to figure out what's going on some other way.
@@ -60,4 +64,3 @@ There's probably an infinite amount of depth to the [options available in Wiresh
 Once you've found the packets related to your particular issue Wireshark gives you a great interface that allows you to easily inspect the contents of every packet to see what could have gone wrong at any point.
 
 I know there's an infinite amount of depth to these tools beyond what I've talked about here, so it's definitely worth looking into the documentation for these tools to deal with more complicated use cases. The few tricks I've mentioned here however, might be able to save you lots of debugging time when looking into what's going on with your application!
-
