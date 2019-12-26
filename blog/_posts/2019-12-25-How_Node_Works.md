@@ -3,9 +3,6 @@ layout: post
 title: "How It Works: Node.JS"
 ---
 
-
-##### NodeJS Code Walkthrough
-
 Since I've been working with node.js quite a bit lately, to build a better mental model of how it works, I wanted to spend some time walking through it's source, and learning a bit about how it works.
 
 ##### High Level Architecture 
